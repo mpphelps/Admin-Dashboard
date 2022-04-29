@@ -1,4 +1,4 @@
-:root.dark {
+:root.Dark {
     --grid-gap-color: rgb(50, 78, 88);
     --dash-bg-color: #062536;
     --dash-txt-color: rgb(169, 173, 182);
@@ -15,7 +15,7 @@
     --project-tile-color: rgb(50, 78, 88);
   }
   
-:root.light {
+:root.Light {
     --grid-gap-color: skyblue;
     --dash-bg-color: #1992d4;
     --dash-txt-color: #ddd;
@@ -115,6 +115,8 @@ body {
     grid-area: 1 / 2 / 2 / 3;
     background-color: var(--header-bg-color);
     color: var(--header-txt-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .header-flex-box {
@@ -141,6 +143,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    align-self: end;
 }
 
 #search-img, #bell-ring-img {
@@ -244,6 +247,18 @@ a:hover {
 
 p {
     margin-left: 5px;
+}
+
+.theme-toggle-btn {
+    background-color: var(--color-btn-bg);
+    border: var(--border-btn);
+    font-size: 1.125rem;
+    margin-left: 5px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    color: var(--color-base-text);
 }
 
 button {
