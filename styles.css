@@ -1,0 +1,106 @@
+:root.dark {
+    --grid-gap-color: rgb(50, 78, 88);
+    --dash-bg-color: #062536;
+    --dash-txt-color: rgb(169, 173, 182);
+    --header-bg-color: #4c4c4d;
+    --header-txt-color: rgb(169, 173, 182);
+    --body-bg-color: #302f2f;
+    --body-txt-color: rgb(169, 173, 182);
+
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(168, 167, 167);
+    --color-btn-bg: rgb(36, 36, 36);
+  }
+  
+:root.light {
+    --grid-gap-color: skyblue;
+    --dash-bg-color: #1992d4;
+    --dash-txt-color: #ddd;
+    --header-bg-color: #ffffff;
+    --header-txt-color: #444;
+    --body-bg-color: #e2e8f0;
+    --body-txt-color: #444;
+
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: #444;
+    --color-btn-bg: rgb(220, 220, 220);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px; */
+    grid-template: 2fr 8fr / 2fr 8fr;
+    grid-auto-rows: 1fr;
+    gap: 4px;
+    /* following causes a scroll bar to appear no matter what */
+    /* padding: 4px;
+    border: 1px solid grey; */
+    background-color: var(--grid-gap-color);
+    /* leaving this commented out, for some reason width is not working */
+    /* width: 100vh; */
+    height: 100vh;
+}
+
+.grid-item {
+    background-color: var(--color-base-bg);
+    text-align: center;
+    color: var(--color-base-text);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.dash {
+    /* row start / column start / row end / column end */
+    grid-area: 1 / 1 / 3 / 2;
+    /* grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2; */
+    background-color: var(--dash-bg-color);
+    color: var(--dash-txt-color);
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+
+.body {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--body-bg-color);
+    color: var(--body-txt-color);
+}
+
+.theme-toggle-btn {
+    color: var(--color-base-text);
+    background-color: var(--color-background);
+    border: var(--border-btn);
+    font-size: 1.125rem;
+    padding: 10px 20px;
+}
+
+.theme-toggle-btn:hover {
+    cursor: pointer;
+  }
+  
+.theme-toggle-btn:focus {
+    outline: var(--border-btn);
+}
+
+p {
+    margin: 12px auto 24px;
+}
+
+img {
+    height: 60px;
+}
