@@ -9,36 +9,193 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-        <div class="grid-container">
-            <div class="grid-item dash">
-              <p>Dashboard</p>
-              <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+        <div class="body-grid-container">
+            <div class="body-grid-item dash">
+
+
+                <!-- GRID DASHBOARD SECTION -->
+
+
+                <div id="dash-title">
+                    <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo">
+                    <a>Dashboard</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/home.png" alt="home.png">
+                    <a href="">Home</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/profile.png" alt="profile.png">
+                    <a href="">Profile</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/message.png" alt="message.png">
+                    <a href="">Messages</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/history.png" alt="history.png">
+                    <a href="">History</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/tasks.png" alt="tasks.png">
+                    <a href="">Tasks</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/communities.png" alt="communities.png">
+                    <a href="">Communities</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/settings.png" alt="settings.png">
+                    <a href="">Settings</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/support.png" alt="support.png">
+                    <a href="">Support</a>
+                </div>
+                <div class="dash-item">
+                    <img class="nav-icon" src="images/privacy.png" alt="privacy.png">
+                    <a href="">Privacy</a>
+                </div>
             </div>
-            <div class="grid-item header">
-              <p>Header</p>
-              <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
-              <button class="theme-toggle-btn"><span class='theme-name'>dark</span> theme</button>
+
+
+            <!-- GRID HEADER SECTION -->
+
+
+            <div class="body-grid-item header">
+
+                <div class="header-flex-box">
+                    <div>
+                        <form action="post" class="header-search-field">
+                            <label for="search-box"><img src="images/search.png" alt="search.png" id="search-img"></label>
+                            <input type="search" id="search-box" name="search-box" placeholder="search....">
+                        </form>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="header-flex-box">
+
+                    <div><img src="images/Banana.png" alt="my logo" id="my-logo"/></div>
+
+                    <div>
+                        <h6>Hi There,</h6>
+                        <h6>Michael Phelps (@mpphelps)</h6>
+                    </div>
+
+                    <div><a><img src="images/bell-ring.png" alt="bell-ring.svg" id="bell-ring-img"></a></div>
+                    <div><button>New</button></div>
+                    <div><button>Upload</button></div>
+                    <div><button>Share</button></div>
+
+                    <div><button class="theme-toggle-btn"><span class='theme-name'>light</span></button></div>
+                </div>
+                
+                
             </div>
-            <div class="grid-item body">
-              <p>Projects</p>
-              <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
+
+
+            <!-- GRID CONTENT SECTION -->
+
+
+            <div class="body-grid-item content">
+                <div class="content-grid">
+
+                    <div class="content-project-grid-area">
+                        <h5>Your Projects</h5>
+                        <div class="project-grid">
+                            <div class="project-tile">
+                                <h3>Admin Dashboard</h3>
+                                <p>Odin Project: Built an admin dashboard using grid functionality.</p>
+                                <p>Added extra functionality with a light/dark theme button.</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/Admin-Dashboard/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/Admin-Dashboard"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                            <div class="project-tile">
+                                <h3>Sign-up Form</h3>
+                                <p>Odin Project: Built an admin dashboard using html forms.</p>
+                                <p>Forms needed to also have front-end user input validation.</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/Signup_Form/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/Signup_Form"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                            <div class="project-tile">
+                                <h3>Calculator</h3>
+                                <p>Odin Project: Built a calculator using javascript to interface with DOM.</p>
+                                <p>Added all functionality found on the windows basic calculator</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/Calculator/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/Calculator"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                            <div class="project-tile">
+                                <h3>Etch-a-Sketch</h3>
+                                <p>Odin Project: Built web based Etch-a-Sketch using javascript to interface with DOM.</p>
+                                <p>Project include rainbow, grid sizing, and specific color selection features.</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/Etch-a-Sketch/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/Etch-a-Sketch"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                            <div class="project-tile">
+                                <h3>Rock Paper Scissors</h3>
+                                <p>Odin Project: Built a web based game of Rock Paper Scissors.</p>
+                                <p>Play against the computer and see who wins! Added special transition features using javascript and DOM.</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/RockPaperScissors/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/RockPaperScissors"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                            <div class="project-tile">
+                                <h3>Conference Form</h3>
+                                <p>Odin Project: Built an admin dashboard using grid functionality.</p>
+                                <p>Added extra functionality with a light/dark theme button.</p>
+                                <div style="text-align: right;">
+                                    <a href="https://mpphelps.github.io/ConferenceForm/"><img class="project-icon" src="images/live-preview.png" alt="Live Preview"></a>
+                                    <a href="https://github.com/mpphelps/ConferenceForm"><img class="project-icon" src="images/github.png" alt="View Code"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="announc-trend-area">
+                        <h5>Announcements</h5>
+                        <div class="announcement-tile">
+                            <div>
+                                <h3><b>Site Maintanance</b></h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <hr>
+                            </div>
+                            <div>
+                                <h3><b>Community Share Day</b></h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <hr>
+                            </div>
+                            <div>
+                                <h3><b>Updated Privacy Policy</b></h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <h5>Trending</h5>
+                        <div class="trend-tile"> 
+                            <div>trending item 1</div>
+                            <div>trending item 2</div>
+                            <div>trending item 3</div>
+                            <div>trending item 4</div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-            <!-- <div class="grid-item">
-                <p>Odin 4</p>
-                <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
-            </div>
-            <div class="grid-item">
-                <p>Odin 5</p>
-                <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
-            </div>
-            <div class="grid-item">
-                <p>Odin 6</p>
-                <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
-            </div>
-            <div class="grid-item">
-                <p>Odin 7</p>
-                <img src="https://i.imgur.com/jkwFqfX.png" alt="top logo" />
-            </div> -->
+
+
         </div>
 </body>
 </html>
